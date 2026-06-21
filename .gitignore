@@ -1,0 +1,34 @@
+# Build
+dist/
+build/
+*.spec
+*.exe
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Runtime
+.engine.pid
+logs/
+*.log
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+Thumbs.db
+Desktop.ini
+
+# Wallpapers (large, not in repo)
+wallpapers/imported/*
+wallpapers/ai_generated/*
+wallpapers/favorites/*
+!wallpapers/imported/.gitkeep
+!wallpapers/ai_generated/.gitkeep
+!wallpapers/favorites/.gitkeep
+
+# Zip
+*.zip

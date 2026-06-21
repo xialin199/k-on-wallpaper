@@ -1,0 +1,52 @@
+# ============================================
+# Wallpaper Engine 配置文件
+# 改完保存 → 引擎自动重载（每轮换壁纸前检测）
+# ============================================
+
+engine:
+  # 壁纸轮换间隔（分钟）
+  rotation_interval_minutes: 1
+
+  # 开机自动启动（v2功能，目前手动启动）
+  startup_with_windows: false
+
+sources:
+  local:
+    enabled: true
+    # 本地图片文件夹（可多个）
+    directories:
+      - "D:\\WallpaperEngine\\wallpapers\\imported"
+      - "D:\\WallpaperEngine\\wallpapers\\ai_generated"
+      - "D:\\WallpaperEngine\\wallpapers\\favorites"
+    # 是否扫描子文件夹
+    recursive: true
+    # 支持的图片格式
+    extensions: [".jpg", ".jpeg", ".png", ".bmp", ".webp", ".tiff"]
+
+display:
+  # 填充模式: fill(填充) | fit(适应) | stretch(拉伸) | tile(平铺) | center(居中) | span(跨区)
+  fit_mode: "fill"
+  # 转场效果: fade(渐显) | none(无)
+  transition: "fade"
+  # 转场动画时长（秒），建议 0.5~1.0
+  transition_duration: 0.7
+
+history:
+  # 历史记录数量（避免短期重复。0=可以连续同一张）
+  max_history: 50
+  # 历史记录文件
+  file: "D:\\WallpaperEngine\\dist\\logs\\history.json"
+
+logging:
+  # 日志保留天数
+  keep_days: 30
+  # 日志级别: DEBUG | INFO | WARNING | ERROR
+  level: "INFO"
+
+# SD生成配置（Phase 2 启用）
+generation:
+  enabled: false
+  schedule_time: "03:00"
+  daily_limit: 5
+  min_free_gpu_mb: 4000
+  check_processes: ["obs64.exe", "douyin.exe"]
