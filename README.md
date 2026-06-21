@@ -19,7 +19,7 @@
 
 ### 方式一：直接用 exe（普通用户）
 
-1. 下载 [k-on-wallpaper.zip](https://github.com/yourname/k-on-wallpaper/releases)
+1. 下载 [k-on-wallpaper.zip](https://github.com/xialin199/k-on-wallpaper/releases)
 2. 解压到任意文件夹
 3. 双击 `start.vbs` → 右下角出现托盘图标 → 右键控制一切
 4. 把壁纸图扔进 `wallpapers/imported/`
@@ -27,7 +27,7 @@
 ### 方式二：从源码运行（开发者）
 
 ```bash
-git clone https://github.com/yourname/k-on-wallpaper.git
+git clone https://github.com/xialin199/k-on-wallpaper.git
 cd k-on-wallpaper
 pip install -r requirements.txt
 py main.py           # 前台运行
