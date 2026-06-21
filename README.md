@@ -17,6 +17,14 @@
   <img src="https://img.shields.io/badge/build-PyInstaller-purple?style=flat-square" alt="Build">
 </p>
 
+<p align="center">
+  <a href="https://github.com/xialin199/k-on-wallpaper/releases/latest">
+    <img src="https://img.shields.io/badge/⬇️%20下载-k--on--wallpaper.zip-brightgreen?style=for-the-badge" alt="Download">
+  </a>
+  <br>
+  <sub>解压即用 · 免安装 · 无需 Python</sub>
+</p>
+
 ---
 
 ## ✨ 功能
